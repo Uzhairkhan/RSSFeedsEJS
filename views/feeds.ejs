@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RSS feeds</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col offset-md-4">
+          <h3>feeds</h3>
+          <%latestFeeds.forEach((latestFeed)=>{%>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><%=latestFeed.title%></h5>
+              <p class="card-text">
+                <%=latestFeed.description%>
+              </p>
+            </div>
+          </div>
+          <%})%>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
